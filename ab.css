@@ -413,16 +413,16 @@ h2 {
   padding: 60px 20px;
   overflow: visible; /* if needed */
   font-family: Arial, sans-serif;
+  color: white;
   text-align: center;
   margin-bottom: 80px; /* to give room for footer */
 }
-.white {
-  color: white;
-}
-
-.no-glow-cyan {
+.contact-heading {
+  text-align: center;
+  font-size: 40px;
   color: cyan;
-  text-shadow: none;
+  margin-bottom: 40px;
+  text-shadow: 0 0 10px cyan;
 }
 
 .container {

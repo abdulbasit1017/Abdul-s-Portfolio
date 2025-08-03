@@ -410,58 +410,52 @@ h2 {
 
 .contact-section {
   background-color: #0f2a26;
+  padding: 60px 20px;
   color: white;
-  padding: 80px 60px;
-  text-align: center;
+  font-family: "Segoe UI", sans-serif;
 }
 
-.contact-heading {
-  font-size: 2.5rem;
+.section-heading {
+  text-align: center;
+  font-size: 36px;
   margin-bottom: 40px;
+}
+
+.section-heading .white {
+  color: white;
+}
+
+.section-heading .cyan {
   color: cyan;
 }
 
 .contact-container {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 40px;
 }
 
-.contact-form-box,
-.contact-info-box {
-  background-color: #111;
+.contact-form-box {
+  background-color: #122e2a;
   padding: 30px;
-  border-radius: 12px;
-  width: 100%;
-  max-width: 48%;
-  box-shadow: 0 0 15px cyan;
-  transition: transform 0.3s ease;
-}
-
-.contact-form-box:hover,
-.contact-info-box:hover {
-  transform: scale(1.02);
+  border-radius: 10px;
+  flex: 1 1 400px;
+  max-width: 500px;
 }
 
 .contact-form-box form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
 }
 
 .contact-form-box input,
 .contact-form-box textarea {
-  padding: 12px;
+  padding: 10px;
+  margin-bottom: 20px;
   border: none;
-  border-radius: 8px;
-  background-color: #222;
-  color: white;
-}
-
-.contact-form-box textarea {
+  border-radius: 5px;
   resize: none;
-  height: 120px;
 }
 
 .contact-form-box button {
@@ -469,28 +463,36 @@ h2 {
   color: #0f2a26;
   padding: 12px;
   border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  border-radius: 5px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact-form-box button:hover {
-  background-color: #00ffff;
+  background-color: #00cccc;
 }
 
-/* Right info box cards */
-.info-card {
-  background-color: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px cyan;
-  transition: transform 0.3s ease;
+.contact-info-box {
+  background-color: #0f2a26;
+  padding: 30px;
+  flex: 1 1 300px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.info-card:hover {
-  transform: scale(1.05);
+.contact-info-box .info-item h3 {
+  color: cyan;
+  margin-bottom: 5px;
 }
+
+.contact-info-box .info-item p {
+  color: white;
+  margin: 0;
+}
+
 /* .contact-container {
   display: flex;
   flex-wrap: wrap;

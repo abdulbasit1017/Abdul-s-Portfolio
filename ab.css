@@ -16,6 +16,12 @@ html {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,12 +101,6 @@ nav ul li a {
   margin: 20px 0;
   line-height: 1.6;
   font-size: 16px;
-}
-/* Animate from left */
-.animate-left {
-  opacity: 0;
-  transform: translateX(-300px);
-  animation: slideInLeft 1s forwards;
 }
 
 @keyframes slideInLeft {

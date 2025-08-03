@@ -407,21 +407,26 @@ h2 {
   color: #ccc;
   font-size: 14px;
 }
-
-.contact-section {
-  background-color: #0f2a26;
-  padding: 60px 20px;
-  overflow: visible; /* if needed */
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-bottom: 80px; /* to give room for footer */
-}
 .contact-heading {
   text-align: center;
   font-size: 40px;
-  color: cyan;
+  color: white;
   margin-bottom: 40px;
-  text-shadow: 0 0 10px cyan;
+}
+
+.contact-heading {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+}
+.white {
+  color: white;
+}
+
+.no-glow-cyan {
+  color: cyan;
+  text-shadow: none;
 }
 
 .container {

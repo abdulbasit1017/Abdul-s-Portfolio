@@ -835,12 +835,53 @@ h2 {
     text-align: center;
   }
   .contact-container {
+    display: flex;
+    justify-content: center; /* center all content */
+    gap: 40px;
+    padding: 30px 0;
+    flex-wrap: wrap;
+    max-width: 1000px; /* add this */
+    margin: 0 auto; /* center align horizontally */
+  }
+
+  .contact-form {
+    flex: 1;
+    min-width: 300px;
+  }
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+  }
+  .contact-form button {
+    background: cyan;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .contact-info {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
     flex-direction: column;
+    gap: 20px;
+  }
+  .contact-info div {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
   }
 
   .contact-form,
   .contact-info {
-    flex: 1 1 300px;
+    flex: 1 1 45%;
+    max-width: 480px;
     background: #1a1a1a;
     padding: 20px;
     border-radius: 10px;

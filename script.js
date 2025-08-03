@@ -38,14 +38,7 @@ function erase() {
 type();
 
 // Toggle mobile menu
-const toggle = document.getElementById("menu-toggle");
-const navLinks = document.getElementById("nav-links");
-
-toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.getElementById("menu-toggle");
 const navList = document.querySelector("nav ul");
 
 menuToggle.addEventListener("click", () => {

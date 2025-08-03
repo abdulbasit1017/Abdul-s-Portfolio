@@ -7,7 +7,10 @@
 
 body {
   background: linear-gradient(135deg, #0f2a26, #0f2a26);
-  padding-top: 80px; /* navbar ki height ke barabar */
+  body {
+    padding-top: 100px; /* adjust if needed */
+  }
+
   color: white;
 }
 
@@ -19,12 +22,13 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-
+  width: 100%;
+  background-color: #05171a; /* same as your navbar color */
+  padding: 20px 60px;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
-  background-color: #05171a;
 }
 
 .logo {

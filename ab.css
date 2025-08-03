@@ -7,10 +7,7 @@
 
 body {
   background: linear-gradient(135deg, #0f2a26, #0f2a26);
-  body {
-    padding-top: 100px; /* adjust if needed */
-  }
-
+  padding-top: 80px; /* navbar ki height ke barabar */
   color: white;
 }
 
@@ -19,16 +16,11 @@ html {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #05171a; /* same as your navbar color */
-  padding: 20px 60px;
-  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px 60px;
+  background-color: #05171a;
 }
 
 .logo {
@@ -103,6 +95,12 @@ nav ul li a {
   margin: 20px 0;
   line-height: 1.6;
   font-size: 16px;
+}
+/* Animate from left */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-300px);
+  animation: slideInLeft 1s forwards;
 }
 
 @keyframes slideInLeft {
@@ -490,6 +488,10 @@ h2 {
   transform: scale(1.05);
 }
 
+.contact-container {
+  flex-direction: column;
+}
+
 /* .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -825,9 +827,6 @@ h2 {
   .contact-container {
     flex-direction: column;
     flex-wrap: wrap; /* Allow wrapping on small screens */
-  }
-  .contact-container {
-    flex-direction: column;
   }
 
   .contact-form {

@@ -744,6 +744,13 @@ h2 {
   .contact-section h2 {
     font-size: 24px;
   }
+  .contact-form-box button {
+    padding: 12px; /* Bigger tap target */
+    font-size: 16px;
+  }
+  .info-card h3 {
+    font-size: 18px; /* Better readability */
+  }
 
   .footer {
     background-color: #111; /* ya koi dark color */
@@ -812,17 +819,13 @@ h2 {
   }
   .contact-container {
     flex-direction: column;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
+    align-items: center; /* Center boxes */
   }
-  .contact-container {
-    flex-direction: column;
-    flex-wrap: wrap;
+  .contact-form-box textarea {
+    max-width: 100%; /* Prevents overflow */
+    resize: vertical; /* Allows only vertical resize */
   }
 
-  .contact-form {
-    flex: 1;
-    min-width: 300px;
-  }
   .contact-form input,
   .contact-form textarea {
     width: 100%;
@@ -851,6 +854,11 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     color: white;
+  }
+  .contact-form-box,
+  .contact-info-box {
+    width: 90%; /* Better spacing */
+    margin: 10px 0;
   }
 
   .contact-form,

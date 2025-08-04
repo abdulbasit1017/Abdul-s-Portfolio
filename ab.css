@@ -410,7 +410,7 @@ h2 {
 
 .contact-section {
   background-color: #0f2a26;
-  padding: 80px 60px;
+  padding: 80px 30px;
   color: white;
 }
 
@@ -627,12 +627,24 @@ h2 {
 
   .contact-container {
     flex-direction: column;
-    align-items: center;
+    gap: 30px;
+  }
+
+  .contact-heading {
+    font-size: 32px;
   }
 
   .contact-form-box,
   .contact-info-box {
-    max-width: 100%;
+    padding: 20px;
+  }
+
+  .info-card {
+    text-align: center;
+  }
+
+  .contact-form-box button {
+    width: 100%;
   }
   .footer-container {
     flex-direction: column;
